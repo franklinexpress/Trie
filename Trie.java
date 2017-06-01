@@ -17,6 +17,7 @@ public class Trie {
             char c = word.charAt(i);
             int asciiIndex = c - 'a';
 
+
             if (tempNode.getChild(asciiIndex) == null) {
                     Node node = new Node(String.valueOf(c));
                     tempNode.setChild(asciiIndex, node);
